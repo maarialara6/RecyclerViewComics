@@ -9,5 +9,23 @@ public class Comics {
         return titulo;
     }
 
-    public void setTitulo(String )
+    public void setTitulo(String titulo){
+        this.titulo = titulo;
+    }
+
+    public  String getUniverso(){
+        return universo
+    }
+
+    public void setUniverso(String universo) {
+        this.universo = universo;
+    }
+
+    public int getImgComic() {
+        return imgComic;
+    }
+
+    public void setImgComic(int imgComic) {
+        this.imgComic = imgComic;
+    }
 }
