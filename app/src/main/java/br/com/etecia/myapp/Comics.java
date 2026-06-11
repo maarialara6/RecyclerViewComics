@@ -14,7 +14,7 @@ public class Comics {
     }
 
     public  String getUniverso(){
-        return universo
+        return universo;
     }
 
     public void setUniverso(String universo) {
