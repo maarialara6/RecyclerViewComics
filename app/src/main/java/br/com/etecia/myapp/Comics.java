@@ -28,4 +28,10 @@ public class Comics {
     public void setImgComic(int imgComic) {
         this.imgComic = imgComic;
     }
+
+    public Comics(String titulo, String universo, int imgComic){
+        this.titulo = titulo;
+        this.universo = universo;
+        this.imgComic = imgComic;
+    }
 }
