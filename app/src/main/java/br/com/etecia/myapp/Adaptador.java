@@ -1,6 +1,7 @@
 package br.com.etecia.myapp;
 
 import android.content.Context;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
@@ -14,13 +15,18 @@ public class Adaptador extends RecyclerView.Adapter<Adaptador.ViewHolder> {
     private Context context;
     private List<Comics> lstcomic;
 
-    public Adaptador() {
+    public Adaptador(Context context, List<Comics> lstcomic) {
+        this.context = context;
+        this.lstcomic = lstcomic;
     }
 
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        return null;
+        View view;
+
+        LayoutInflater layoutInflater = LayoutInflater.from(context);
+        view = layoutInflater.inflate(R.layout.modelo,parent,false);
     }
 
     @Override
@@ -36,6 +42,8 @@ public class Adaptador extends RecyclerView.Adapter<Adaptador.ViewHolder> {
     public class ViewHolder extends RecyclerView.ViewHolder{
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
+
+
         }
     }
 }
