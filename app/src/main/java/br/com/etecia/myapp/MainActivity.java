@@ -30,5 +30,7 @@ public class MainActivity extends AppCompatActivity {
         idRecDc = findViewById(R.id.idRecDc);
 
         lstcomic = new ArrayList<>();
+
+        lstcomic.add(new Comics("Lantern Corps", "DC", R.drawable.lanternas));
     }
 }
