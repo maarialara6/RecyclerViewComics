@@ -33,6 +33,9 @@ public class MainActivity extends AppCompatActivity {
         lstcomic = new ArrayList<>();
         lstcomic.add(new Comics("Lantern Corps", "DC", R.drawable.lanternas));
         lstcomic.add(new Comics("X-Man", "Marvel", R.drawable.xman));
+        lstcomic.add(new Comics("As Amazonas de Themyscira", "DC", R.drawable.amazonas));
+        lstcomic.add(new Comics("Illuminati", "Marvel", R.drawable.illuminati));
+
 
         Adaptador adaptador = new Adaptador(getApplicationContext(), lstcomic);
 
