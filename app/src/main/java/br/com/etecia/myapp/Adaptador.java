@@ -33,6 +33,8 @@ public class Adaptador extends RecyclerView.Adapter<Adaptador.ViewHolder> {
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
+        /*holder.modTitulo.setText(lstcomic.get(position).getTitulo());
+        holder.modImagem.setImageResource(lstcomic.get(position).getImgComic());*/
 
     }
 
