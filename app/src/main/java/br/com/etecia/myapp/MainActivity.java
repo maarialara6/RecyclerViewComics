@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
@@ -30,7 +31,12 @@ public class MainActivity extends AppCompatActivity {
         idRecDc = findViewById(R.id.idRecDc);
 
         lstcomic = new ArrayList<>();
-
         lstcomic.add(new Comics("Lantern Corps", "DC", R.drawable.lanternas));
+
+        Adaptador adaptador = new Adaptador(getApplicationContext(), lstcomic);
+
+        idRecDc.setLayoutManager(new GridLayoutManager(getApplicationContext(), 2));
+
+        idRecDc.setAdapter(adaptador);
     }
 }
