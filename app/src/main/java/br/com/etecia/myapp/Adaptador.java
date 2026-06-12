@@ -27,6 +27,8 @@ public class Adaptador extends RecyclerView.Adapter<Adaptador.ViewHolder> {
 
         LayoutInflater layoutInflater = LayoutInflater.from(context);
         view = layoutInflater.inflate(R.layout.modelo,parent,false);
+
+        return new ViewHolder(view);
     }
 
     @Override
