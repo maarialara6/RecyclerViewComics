@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
         lstcomic.add(new Comics("Illuminati", "Marvel", R.drawable.illuminati));
         lstcomic.add(new Comics("Família Superman", "DC", R.drawable.superfamily));
         lstcomic.add(new Comics("Thunderbolts*", "Marvel", R.drawable.thunderbolts));
-        lstcomic.add(new Comics("Liga da Justiça Sombria", "DC", R.drawable.));
+        lstcomic.add(new Comics("Liga da Justiça Sombria", "DC", R.drawable.justice));
         lstcomic.add(new Comics("Força-Tarefa", "Marvel", R.drawable.starforce));
 
 
